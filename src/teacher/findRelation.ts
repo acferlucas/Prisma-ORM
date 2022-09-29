@@ -11,3 +11,5 @@ async function findRelation() {
 
   console.log(result)
 }
+
+findRelation();
