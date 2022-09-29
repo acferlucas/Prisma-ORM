@@ -5,14 +5,10 @@ const prisma = new PrismaClient();
 async function createOneCurse() {
   const result = await prisma.courses.create({
     data: {
-      name: "Curso Elixir",
-      description: "A Elixir  curse with focus on the web development service.",
-      duration: 60,
-      teacher: {
-        create: {
-          name: "Fernando-Joseph"
-        }
-      }
+      name: "Curso Frontend",
+      description: "A Front  curse with focus on the web development service.",
+      duration: 289,
+      teachersId: "b00d37d9-c869-4144-9b6b-4d8ae9a20083",
     }
   });
 
